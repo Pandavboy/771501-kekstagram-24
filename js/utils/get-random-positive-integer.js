@@ -26,3 +26,5 @@ function getRandomPositiveInteger (num1, num2) {
   // потому что Math.random() генерирует только дробные числа и ноль.
   return Math.floor(result);
 }
+
+getRandomPositiveInteger(5, 7);
