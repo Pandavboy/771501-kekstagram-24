@@ -25,7 +25,7 @@ const createComments = () => commentsWithEmptyObjects.map((item, index) => ({
   message: messages[checkRandomNumber(0, names.length)],
 }));
 
-export const createArrayWithObjects = () => arrayWithEmptyObjects.map((item, index) => ({
+const createArrayWithObjects = () => arrayWithEmptyObjects.map((item, index) => ({
   id: index + 1,
   comments: createComments(),
   url: `photos/${checkRandomNumber(1, 25)}.jpg`,
@@ -34,3 +34,4 @@ export const createArrayWithObjects = () => arrayWithEmptyObjects.map((item, ind
 }));
 createArrayWithObjects();
 
+export {createArrayWithObjects};
