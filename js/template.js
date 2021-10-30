@@ -1,16 +1,14 @@
 import { createArrayWithObjects } from './data.js';
 
-const list = document.createDocumentFragment('ul');
+const usersPhoto = document.createDocumentFragment();
 const data = createArrayWithObjects();
 
 data.forEach((item) => {
-  const li = document.createElement('li');
   const link = document.createElement('a');
   const img = document.createElement('img');
   const text = document.createElement('p');
   const spanComments = document.createElement('span');
   const spanLikes = document.createElement('span');
-  li.classList = 'picture__list';
   link.classList = 'picture';
   img.classList = 'picture__img';
   text.classList = 'picture__info';
@@ -21,9 +19,8 @@ data.forEach((item) => {
   spanLikes.innerHTML = item.likes;
   text.append(spanComments, spanLikes);
   link.append(img, text);
-  li.append(link);
-  list.append(li);
+  usersPhoto.append(link);
 });
 
-const createList = () => document.querySelector('.pictures').appendChild(list);
-export {createList};
+const createUsersPhoto = () => document.querySelector('.pictures').appendChild(usersPhoto);
+export {createUsersPhoto};

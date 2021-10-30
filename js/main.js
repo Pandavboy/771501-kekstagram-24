@@ -1,3 +1,3 @@
-import {createList} from './template.js';
-createList();
+import {createUsersPhoto} from './template.js';
+createUsersPhoto();
 
