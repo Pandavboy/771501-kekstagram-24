@@ -1,2 +1,3 @@
-import {createArrayWithObjects} from './data.js';
-createArrayWithObjects();
+import {createList} from './template.js';
+createList();
+
